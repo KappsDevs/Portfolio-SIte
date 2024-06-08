@@ -1,0 +1,164 @@
+#grad {
+    background-image: linear-gradient(to bottom right, #FFF9D0, #5AB2FF);
+  }
+
+  body{
+    font-family: Arial, sans-serif;
+    
+  }
+
+/* Navbar Section*/
+
+.header{
+    background-color: #FFF9D0; 
+}
+
+/* Inicio Section*/
+
+.container-flex
+{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh
+    
+}
+
+.inicio-section
+{
+    align-self: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .container-flex
+    {
+        flex-direction: column;
+        
+    }
+    .img-inicio-section img{
+        width: 100%; /* Tamanho para telas menores */
+        height: auto; /* Tamanho para telas menores */
+    }
+
+    .inicio-section
+    {
+        align-self: center;
+        text-align: center;
+    }
+
+   
+}
+
+/* Sobre mim Section*/
+
+
+.about-me-container
+{
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto ;
+    grid-column-gap: 50px;
+}   
+
+.about-me-title
+{
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: blueviolet;
+    text-align: center;
+    align-self: center;
+}
+
+.about-me-image
+{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: yellow;
+    align-self: flex-start;
+    text-align: right;
+}
+
+
+.teste2
+{
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: green;
+    text-align: left;
+}
+
+.teste3
+{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.about-me-image img
+{
+   width: 40vh;
+   height: auto;
+}
+
+
+
+
+
+
+/* Skills Section*/
+
+.icon-container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    
+}
+
+
+
+/* Projeto Section*/
+
+
+.teste5
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects Section*/
+
+.project-grid
+{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    
+}
+.grid-item {
+    padding: 10px; /* Adicione preenchimento para espaçamento interno */
+}
