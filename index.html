@@ -9,11 +9,12 @@
 </head>
 <body id="grad">
 
-<div class="content-wrapper">
+
+
 <!-- Navbar - Header --> 
 
     
-<header class="header d-flex flex-wrap justify-content-center py-3 mb-4 ">
+<header  class="header d-flex flex-wrap justify-content-center py-3 mb-4 ">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
 
@@ -23,19 +24,18 @@
     </a>
 
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Início</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Fale Comigo</a></li>
+      <li class="nav-item"><a href="#inicio" class="nav-link" aria-current="page">Início</a></li>
+      <li class="nav-item"><a href="#sobremim" class="nav-link">Sobre</a></li>
+      <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+      <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+      <li class="nav-item"><a href="#faleComigo" class="nav-link">Fale Comigo</a></li>
     </ul>
 </header>
 
 
 <!-- Heroes - inicio-->
 
-<div class="container-flex">
-
+<div class="container-flex" id="inicio">
   <div class="inicio-section"> 
     <h2>Hello World! </h2>
     <p>
@@ -44,9 +44,8 @@
   </div>
   
     <div class="img-inicio-section ">
-      <img src="images/Designer(5).jpeg" width="500" height="500"/>
+      <img src="images/pixelArt2.jpeg" width="500" height="590" alt="imagem pixelada de uma menina loira programando, na mesa possui um café, e um gato em seu colo"/>
     </div>
-
 </div> 
 
 
@@ -55,53 +54,41 @@
 
 <!-- Sobre mim -->
 
-<div class="about-me-container">
+<div class="about-me-container" id="sobremim">
 
-  <div class="about-me-title"> <h1>Sobre Mim</h1> </div>
+  <div class="about-me-title"> <h1>Sobre Mim</h1> <hr> </div>
   
- 
-
-  <div class="about-me-image"> <img  src="images/Designer(12).jpeg" width="500" height="500"> </div>
-
-    
+  <div class="about-me-image"> 
+    <img  src="images/pixelArt.jpeg" width="500" height="500" alt="imagem gerada por uma inteligencia artificial de uma mulher loira com pigmentos azul, amarelo e desenha em traços finos e pretos com óculos delicado em seu rosto. A mesma usa uma roupa formal."> 
+  </div>
   
-
-  <div class="teste2"> 
-
-    <div class="teste1"><h3 >Olá, eu sou a Stefanni</h3> </div>
-
+  <div class="about-me-content"> 
+    <div class="about-me-greeting"><h3 >Olá, eu sou a Stefanni</h3> </div>
+    </br>
     <p > 
-          Meu nome é Stefanni, tenho 21 anos e atualmente estou cursando Engenharia de Computação no CEFET-RJ. 
+          Tenho 21 anos e atualmente estou cursando Engenharia de Computação no CEFET-RJ em Petrópolis-RJ. 
           Desde cedo, desenvolvi uma paixão pela tecnologia, o que me levou a explorar e aprender continuamente sobre essa área fascinante.</br>
           Ao longo da minha jornada acadêmica, tenho me dedicado não apenas aos estudos em sala de aula, mas também ao desenvolvimento de projetos pessoais e acadêmicos. 
-          Esses projetos não apenas aprimoram minhas habilidades técnicas, mas também me permitem aplicar os conhecimentos adquiridos de forma prática e criativa.</br>
           Além disso, sou bolsista no Laboratório Nacional de Computação Científica (LNCC), onde tenho a oportunidade de contribuir para pesquisas e projetos inovadores na área da computação.</br>
           Estou constantemente em busca de novos desafios e oportunidades para expandir meu conhecimento e impactar positivamente o mundo através da tecnologia. 
           Estou animada para o que o futuro reserva e pronta para enfrentar novos desafios com entusiasmo e determinação.
-          
-      
     </p>
-
-    <div class="teste3"> 
-          <div > <button type="button" class="btn btn-primary">Download CV</button> </div>
-          <div> <button type="button" class="btn btn-outline-primary">Envie uma Mensagem</button></div>
+    </br>
+    <div class="about-me-actions"> 
+          <div > <a href="images/stefanniKappsAtt.pdf" download> <button type="button" class="btn btn-primary">Download CV</button> </a> </div>
+          <div> <button type="button" class="btn btn-outline-primary " disabled>Envie uma Mensagem</button></div>
     </div>        
-
-   </div>    
-
-      <!-- 
-      
-    -->
-    
+  </div>    
 </div> 
 
 
 
 <!-- Skills -->
 
-<div class="icon-container">
+<div class="icon-container" id="Skills">
 
-  <h2 class="pb-2 border-bottom">Hard Skills</h2>
+  <h2 class="pb-2 text-center">Hard Skills</h2>
+  <hr>
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
     <div class="feature col">
@@ -186,10 +173,11 @@
 <!-- Projetos -->
 
 
-<div class="teste5">
+<div class="preject-section" id="projetos">
 
 
-  <h2 class="pb-2 border-bottom ">Projetos</h2>
+  <h2 class="pb-2 text-center ">Projetos</h2>
+  <hr>
 
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     <div class="col">
@@ -274,7 +262,7 @@
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(#);">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
           <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pricing - Table</h3>
           <ul class="d-flex list-unstyled mt-auto">
@@ -296,7 +284,7 @@
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(images/snakegame.png); background-position: top right;">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
           <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Snake Game</h3>
           <ul class="d-flex list-unstyled mt-auto">
@@ -316,43 +304,39 @@
 
 </div>
 
+<!-- Contact Me section -->
 
 
+  <form class="contact-me" id="faleComigo"> 
+
+    <h1 class="title-contact-me">Fale Comigo</h1>
+    <hr >
+    <div>
+      <label for="fname">Nome:</label>
+      <input type="text" id="fname" name="fname" placeholder="Digite seu nome" disabled><br>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu Email" disabled><br><br>
+    </div>  
+    <div> 
+      <label for="msg">Mensagem:</label>
+      <textarea name="message" rows="10" cols="30" placeholder="Digite sua mensagem" disabled></textarea> <br>
+    </div>
+    <div> 
+      <button type="button submit" class="btn btn-primary contact-me-btn" disabled >Enviar Mensagem</button> 
+    </div>
+      
 
 
+  </form>
 
 
+<!-- Footer -->
 
+   <hr id="final-hr">
+    <p class="text-center text-body-secondary">© 2024 - Stefanni Kapps</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Project Section -->
-
-<div class="project-grid mt-5">
-
-  <div class="grid-item"><a href="https://github.com/KappsDevs/Random_Walk" target="_blank"> <img src="images/280px-Random_walk_2500.svg.png" width="100" height="100"></a> </div>
-  <div class="grid-item"><a href="https://github.com/KappsDevs/ETL-Pipeline" target="_blank"> ETL-Pipeline </a></div>
-  <div class="grid-item"><a href="https://github.com/KappsDevs/Landscape-Services" target="_blank"> Landscape Services </a></div>
-  <div class="grid-item"><a href="https://github.com/KappsDevs/TinDog" target="_blank"> Tindog </a></div>
-  <div class="grid-item"><a href="https://github.com/KappsDevs/Pricing-Table" target="_blank"> Pricing Table </a></div>
-  <div class="grid-item"><a href="" > First Resume </a> </div>
-  <div class="grid-item"><a href="" > Store Management </a> </div>
-  <div class="grid-item"><a href="" > Snake Game </a> </div>
-
-
-</div> 
-
-</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

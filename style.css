@@ -1,17 +1,29 @@
+/* This makes sure that the padding and border are included 
+in the total width and height of the elements. */
+* {
+    box-sizing: border-box;
+}
+
 #grad {
     background-image: linear-gradient(to bottom right, #FFF9D0, #5AB2FF);
   }
 
   body{
-    font-family: Arial, sans-serif;
-    
+    font-family: 'Playfair Display', serif;
   }
 
-/* Navbar Section*/
 
 .header{
-    background-color: #FFF9D0; 
+    border-bottom: 1px solid #FFF9D0;
 }
+
+hr{
+    border: 2px solid #FFF9D0;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Inicio Section*/
 
@@ -31,28 +43,11 @@
     align-self: center;
 }
 
-
-
-@media screen and (max-width: 768px) {
-    
-    .container-flex
-    {
-        flex-direction: column;
-        
-    }
-    .img-inicio-section img{
-        width: 100%; /* Tamanho para telas menores */
-        height: auto; /* Tamanho para telas menores */
-    }
-
-    .inicio-section
-    {
-        align-self: center;
-        text-align: center;
-    }
-
-   
+img{
+    border-radius: 50%;
 }
+
+
 
 /* Sobre mim Section*/
 
@@ -71,7 +66,6 @@
 .about-me-title
 {
     grid-area: 1 / 1 / 2 / 3;
-    background-color: blueviolet;
     text-align: center;
     align-self: center;
 }
@@ -79,20 +73,18 @@
 .about-me-image
 {
     grid-area: 2 / 1 / 3 / 2;
-    background-color: yellow;
     align-self: flex-start;
     text-align: right;
 }
 
 
-.teste2
+.about-me-content
 {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: green;
     text-align: left;
 }
 
-.teste3
+.about-me-actions
 {
     display: flex;
     gap: 50px;
@@ -101,10 +93,9 @@
 
 .about-me-image img
 {
-   width: 40vh;
-   height: auto;
+    width: 40vh;
+    height: auto;
 }
-
 
 
 
@@ -115,9 +106,8 @@
 .icon-container
 {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 100px auto;
     height: 100vh;
-    
 }
 
 
@@ -125,7 +115,7 @@
 /* Projeto Section*/
 
 
-.teste5
+.preject-section
 {
     max-width: 1200px;
     margin: 0 auto;
@@ -137,28 +127,137 @@
 
 
 
+/* Contact Me Section */
 
-
-
-
-
-
-
-
-
-
-
-
-/* Projects Section*/
-
-.project-grid
-{
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    height: 100vh;
     margin: 0 auto;
+   
+}
+.title-contact-me{
+    align-self: center;
+}
+ input[type=text], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+ }
+
+ textarea{
+    box-sizing: border-box;
+    border-radius: 15px;
+    resize: none;
+    padding: 6px 10px;
+    width: 100%;
+ }
+
+ #final-hr
+ {
+    width: 100%;
+ }
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .about-me-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
     
-}
-.grid-item {
-    padding: 10px; /* Adicione preenchimento para espaçamento interno */
-}
+        }
+    
+        .about-me-title {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    
+        .about-me-image {
+            grid-area: 3 / 1 / 4 / 2;
+            text-align: center;
+        }
+    
+        .about-me-content {
+            grid-area: 2 / 1 / 3 / 2;
+            text-align: center;
+    
+        }
+
+        .container-flex {
+            flex-direction: column;
+        
+            }
+        
+        .img-inicio-section img {
+            width: 100%;
+            /* Tamanho para telas menores */
+            height: auto;
+            /* Tamanho para telas menores */
+        }
+        
+         .inicio-section {
+            align-self: center;
+            text-align: center;
+        } 
+        .preject-section {
+            margin: 650px auto;
+        }
+
+        .icon-container {
+            margin: 400px auto;
+            height: 100vh;
+        }
+
+        .contact-me{
+            margin-top: 145vh ;
+        }
+ }
+
+ 
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .about-me-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .preject-section {
+            margin: 550px auto;
+        }
+        .contact-me {
+            margin-top: 150vh;
+        }
+    
+
+ }
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .about-me-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+        }
+    
+        .preject-section {
+            margin: 0 auto;
+        }
+
+        .contact-me {
+            margin: 0 auto;
+        }
+        .icon-container {
+            margin: 200px auto;
+            
+        }
+ }
+
+
+
+
+
+
+
